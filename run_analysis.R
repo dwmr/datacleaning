@@ -97,7 +97,7 @@ fullSet <- data.table(fullSet)
 summarizedData <- fullSet[,lapply(.SD,mean), by=list(subject_id,activity)]
 
 #Write tidy data to csv:
-write.csv(summarizedData, 'tidy_data.csv', row.names=FALSE)
+write.table(summarizedData, 'tidy_data.txt', sep=',', row.names=FALSE)
 
 
 
