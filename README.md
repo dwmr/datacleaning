@@ -6,6 +6,7 @@ This repository contains a data processing script (run_analysis.R) along with a 
 The procesing routine requires the 'plyr' and 'data.table' packages and will attempt to install (and subsequently load) them if they are not already installed.  Warnings are not supressed.
 
 In general, the script:
+
 1. Loads (and installs if necessary) required packages.
 2. Downloads an archive containing the data to be processed.
 3. Loads and subsets the test set data to the specified variables.
